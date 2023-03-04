@@ -35,6 +35,8 @@ class KeyboardCell: UICollectionViewCell {
 
   // Exercise 5: Call the `didSelectString` closure and pass in the string this cell holds
   @objc private func didTapString() {
-    didSelectString(string)
+    // START YOUR CODE HERE
+    // ...
+    // END YOUR CODE HERE
   }
 }

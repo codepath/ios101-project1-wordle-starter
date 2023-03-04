@@ -30,9 +30,8 @@ class KeyboardController: NSObject,
     // Exercise 1: Return the correct number of items in a section
     // Tip: There's a helper method you can use located in this class
     // START YOUR CODE HERE
-    // ...
-    // END YOUR CODE HERE
     return 0
+    // END YOUR CODE HERE
   }
 
   func collectionView(_ collectionView: UICollectionView,
