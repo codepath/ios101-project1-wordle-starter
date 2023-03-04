@@ -1,0 +1,53 @@
+//
+//  LetterCell.swift
+//  Wordle
+//
+//  Created by Mari Batilando on 2/12/23.
+//
+
+import UIKit
+
+enum LetterCellStyle {
+  case initial
+  case incorrect
+  case correctLetterOnly
+  case correctLetterAndPosition
+}
+
+class LetterCell: UICollectionViewCell {
+
+  @IBOutlet weak var letterLabel: UILabel!
+
+  required init?(coder: NSCoder) {
+    super.init(coder: coder)
+    layer.borderWidth = 2.0
+    layer.borderColor = UIColor.gray.cgColor
+  }
+
+  // MARK: - Public Methods
+  func set(letter: Character) {
+    letterLabel.text = "\(letter)"
+  }
+
+  func clearLetter() {
+    letterLabel.text = ""
+  }
+
+  /*
+   Exercise 9:
+   Set the correct background color depending on the style that is passed in:
+   1. normal should set the background and border color to a red-green-blue-alpha (RGBA) value of 0.23, 0.23, 0.24, 1.0 respectively
+   2. correctLetterOnly should set the background and border color to a RGBA value of 0.69, 0.63, 0.30, 1.0 respectively
+   3. correctLetterAndPosition should set the background and border color to a RGBA value of 0.38, 0.55, 0.33, 1.0 respectively
+
+   Tip 1: Use a switch-case statement to enumerate among the possible values of LetterCellStyle
+   Tip 2: `contentView` is a UIView. Look at the documentation to see what property you can change to modify its background color
+   Tip 3: Look at what initializers UIColor has in the API documentation
+   Tip 4: Look above at the init method to see how to change the borderColor
+   */
+  func set(style: LetterCellStyle) {
+    // START YOUR CODE HERE
+    // ...
+    // END YOUR CODE HERE
+  }
+}
