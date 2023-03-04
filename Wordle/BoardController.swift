@@ -59,7 +59,7 @@ class BoardController: NSObject,
     guard numGuesses > 0 && numGuesses % numItemsPerRow != 0 else { return }
     let cell = collectionView.cellForItem(at: IndexPath(item: numGuesses - 1, section: 0)) as! LetterCell
     numGuesses -= 1
-    // Exercise 8: Look at the available LetterCell's methods to clear the letter and set the style to `initial`
+    // Exercise 6: Look at the available LetterCell's methods to clear the letter and set the style to `initial`
     // Tip: Checkout the public methods on LetterCell
     // START YOUR CODE HERE
     // ...
