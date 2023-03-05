@@ -25,7 +25,8 @@ class ViewController: UIViewController {
     /*
       Exercise 3: Pass-in a closure to the keyboardController's `didSelectString` property.
       This closure should use the `deleteLastCharacter` method if the string selected is equal to
-      the `deleteKey` constant. Else, it should use the `enter` method and pass in the selected string.
+      the `DELETE_KEY` constant (see Constants.swift).
+      Else, it should use the `enter` method and pass in the selected string.
      */
     // START YOUR CODE HERE
     // ...
