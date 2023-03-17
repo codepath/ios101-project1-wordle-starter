@@ -36,14 +36,17 @@ class LetterCell: UICollectionViewCell {
   /*
    Exercise 9:
    Set the correct background color depending on the style that is passed in:
-   1. normal should set the background and border color to a red-green-blue-alpha (RGBA) value of 0.23, 0.23, 0.24, 1.0 respectively
-   2. correctLetterOnly should set the background and border color to a RGBA value of 0.69, 0.63, 0.30, 1.0 respectively
-   3. correctLetterAndPosition should set the background and border color to a RGBA value of 0.38, 0.55, 0.33, 1.0 respectively
+   1. initial should set the background color to black and the border color to gray
+   2. incorrect should set the background and border color to a red-green-blue-alpha (RGBA) value of 0.23, 0.23, 0.24, 1.0 respectively
+   3. correctLetterOnly should set the background and border color to a RGBA value of 0.69, 0.63, 0.30, 1.0 respectively
+   4. correctLetterAndPosition should set the background and border color to a RGBA value of 0.38, 0.55, 0.33, 1.0 respectively
 
    Tip 1: Use a switch-case statement to enumerate among the possible values of LetterCellStyle
    Tip 2: `contentView` is a UIView. Look at the documentation to see what property you can change to modify its background color
    Tip 3: Look at what initializers UIColor has in the API documentation
    Tip 4: Look above at the init method to see how to change the borderColor
+   
+   // Checkpoint: After finishing this exercise, you should now see that the board is accurately colored based on your guess! If it's not working, make sure you have done this exercise correctly.
    */
   func set(style: LetterCellStyle) {
     // START YOUR CODE HERE

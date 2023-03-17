@@ -23,10 +23,11 @@ class ViewController: UIViewController {
     boardController = BoardController(collectionView: wordsCollectionView)
     keyboardController = KeyboardController(collectionView: keyboardCollectionView)
     /*
-      Exercise 3: Pass-in a closure to the keyboardController's `didSelectString` property.
-      This closure should use the `deleteLastCharacter` method if the string selected is equal to
-      the `DELETE_KEY` constant (see Constants.swift).
-      Else, it should use the `enter` method and pass in the selected string.
+      Exercise 3: Assign a closure to the `didSelectString` property of `keyboardController` (see KeyboardController.swift):
+      
+      This closure takes in a string (the string selected from the keyboard).
+      If the string is equal to the `DELETE_KEY` constant (see Constants.swift), then call the `deleteLastCharacter` method of `boardController`.
+      Else, it should use the `enter` method of `boardController` and pass in the selected string as the argument.
      */
     // START YOUR CODE HERE
     // ...
