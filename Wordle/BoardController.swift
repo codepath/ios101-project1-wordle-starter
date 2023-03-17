@@ -33,10 +33,10 @@ class BoardController: NSObject,
   }
 
   // MARK: - Public Methods
-  func enter(_ character: String) {
+  func enter(_ string: String) {
     guard numGuesses < numItemsPerRow * numRows else { return }
     let cell = collectionView.cellForItem(at: IndexPath(item: numGuesses, section: 0)) as! LetterCell
-    cell.set(letter: Character(character))
+    cell.set(letter: string)
     UIView.animate(withDuration: 0.1,
                    delay: 0.0,
                    options: [.autoreverse],

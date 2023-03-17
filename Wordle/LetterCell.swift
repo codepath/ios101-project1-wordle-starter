@@ -25,8 +25,8 @@ class LetterCell: UICollectionViewCell {
   }
 
   // MARK: - Public Methods
-  func set(letter: Character) {
-    letterLabel.text = "\(letter)"
+  func set(letter: String) {
+    letterLabel.text = letter
   }
 
   func clearLetter() {
