@@ -62,7 +62,7 @@ extension BoardController {
   func getCorrectLettersOnly(countedSet: NSCountedSet,
                              remainingIndexPaths: inout Set<IndexPath>) -> [IndexPath] {
     var res = [IndexPath]()
-    let indexPaths = getIndexPaths(for: currRow)
+      _ = getIndexPaths(for: currRow)
     for indexPath in remainingIndexPaths {
       let cell = collectionView.cellForItem(at: indexPath) as! LetterCell
       let letterInCell = cell.letterLabel.text!
