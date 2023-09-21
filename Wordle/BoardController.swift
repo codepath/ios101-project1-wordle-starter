@@ -58,7 +58,7 @@ class BoardController: NSObject,
 
   func deleteLastCharacter() {
     guard numGuesses > 0 && numGuesses % numItemsPerRow != 0 else { return }
-    let cell = collectionView.cellForItem(at: IndexPath(item: numGuesses - 1, section: 0)) as! LetterCell
+      _ = collectionView.cellForItem(at: IndexPath(item: numGuesses - 1, section: 0)) as! LetterCell
     numGuesses -= 1
     // Exercise 6: Look at the available LetterCell's methods to clear the letter and set the style to `initial`
     // Tip: Checkout the public methods on LetterCell.swift
