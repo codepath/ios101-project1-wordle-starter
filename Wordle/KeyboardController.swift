@@ -29,11 +29,11 @@ class KeyboardController: NSObject,
                       numberOfItemsInSection section: Int) -> Int {
     // Exercise 1: Return the correct number of items in a section
     // Tip: There's a helper method you can use located in this class
-    // START YOUR CODE HERE
+    // START YOUR CODE HERE; done
     return numItems(in: section)
     // END YOUR CODE HERE
   }
-
+    
   func collectionView(_ collectionView: UICollectionView,
                       cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
     let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "KeyboardCell",
@@ -42,6 +42,7 @@ class KeyboardController: NSObject,
     // Exercise 4: Pass in the `didSelectString` closure to the KeyboardCell's corresponding property
     // START YOUR CODE HERE
     // ...
+      cell.didSelectString = {[weak self] selectedString in self?.didSelectString?(selectedString)}
     // END YOUR CODE HERE
     return cell
   }
