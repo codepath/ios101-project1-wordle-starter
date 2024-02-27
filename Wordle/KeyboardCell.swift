@@ -30,7 +30,10 @@ class KeyboardCell: UICollectionViewCell {
       Checkpoint: After finishing this exercise, you should now be able to see the keyboard laid out on the screen! If it's not working, check your work on exercises 1 & 2.
     */
     // START YOUR CODE HERE
+      self.string = string
+      label.text = string 
     // ...
+      
     // END YOUR CODE HERE
   }
 
@@ -39,6 +42,7 @@ class KeyboardCell: UICollectionViewCell {
   @objc private func didTapString() {
     // START YOUR CODE HERE
     // ...
+      didSelectString?(string)
     // END YOUR CODE HERE
   }
 }
