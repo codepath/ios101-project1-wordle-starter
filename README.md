@@ -2,11 +2,11 @@
 
 This is the starter project for iOS 101 Project 1 - Wordle Pt. 1
 
-# Project 1 - *Name of App Here*
+# Project 1 - Wordle
 
-Submitted by: **Your Name Here**
+Submitted by: Micah Fossett
 
-**Name of your app** is an app that ... [TODO] 
+Wordle is an app that lets users engage their creative thinking process by allowing a daily toll of 5 guesses for a nation wide word that has no prior hints. Letters in the correct spots will be green, letters not in the correct spot, but in the word are colored yellow, and letters not in the word are grey.
 
 Time spent: **X** hours spent in total
 
@@ -40,7 +40,7 @@ Describe any challenges encountered while building the app.
 
 ## License
 
-    Copyright [yyyy] [name of copyright owner]
+    Copyright [2024] [Micah Fossett]
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
