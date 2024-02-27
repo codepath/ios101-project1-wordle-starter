@@ -8,7 +8,7 @@ Submitted by: Micah Fossett
 
 Wordle is an app that lets users engage their creative thinking process by allowing a daily toll of 5 guesses for a nation wide word that has no prior hints. Letters in the correct spots will be green, letters not in the correct spot, but in the word are colored yellow, and letters not in the word are grey.
 
-Time spent: **X** hours spent in total
+Time spent: 7 hours spent in total
 
 ## Required Features
 
